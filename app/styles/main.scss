@@ -1,0 +1,85 @@
+@import "compass";
+@import "variables";
+@import "superslides";
+@import "sections";
+
+
+
+*, *:before, *:after {
+	-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+
+body {
+	background: $body-background;
+	font-family: Lato, sans-serif;
+	font-size: $base-font-size;
+	line-height: $base-line-height;
+	color: #333;
+	border: 20px solid #fff;
+}
+
+a {
+	&:hover {
+		text-decoration: none; 
+	}
+}
+
+ul {
+	margin: 0 0 $base-line-height;
+}
+
+// Custom
+.main {
+	z-index: 9;
+	text-align: center;
+}
+
+.header {
+	padding: $base-line-height * 2 0;
+	background: #f6f6f6;
+}
+
+h1, h2 {
+	font-weight: normal;
+	font-family: 'Bree Serif', serif;
+	line-height: $base-line-height;
+	margin: 0 0 $base-line-height;
+}
+
+h1 {
+	letter-spacing: 0;
+	font-size: $base-font-size + 20;
+	color: $primary-color;
+}
+
+.slogan {
+	font-size: $base-font-size + 10;
+	font-family: 'Bree Serif', serif;
+	margin-bottom: 0; 
+}
+
+.def-list {
+	li {
+		margin-bottom: $base-line-height / 4;
+	}
+	h3 {
+		font-size: $base-font-size;
+		display: inline;
+		margin-right: $base-line-height / 4;
+	}
+}
+
+
+.map-link {
+	background: #fff url('http://maps.googleapis.com/maps/api/staticmap?center=David%20Blidsgate%2017&zoom=12&size=500x180&sensor=false&visual_refresh=true&markers=59.553163,11.32595&scale=2') no-repeat center center;
+	background-size: cover;
+	color: $primary-color;
+	font-size: $base-font-size + 8;
+	line-height: $section-height - $base-line-height;
+	font-weight: bold;
+}
+
+.unstyled {
+	list-style: none;
+	padding: 0;
+}

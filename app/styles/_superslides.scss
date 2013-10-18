@@ -1,0 +1,55 @@
+// Required
+#slides {
+  position: relative;
+  .slides-container {
+    display: none;
+  }
+  .scrollable {
+    @include pie-clearfix;
+    position: relative;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    height: 100%;
+  }
+}
+
+// Optional
+.slides-navigation {
+  margin: 0 auto;
+  position: fixed;
+  z-index: 3;
+  top: 46%;
+  width: 100%;
+  a {
+    position: fixed;
+    display: block;
+    &.prev {
+      left: 0;
+    }
+    &.next {
+      right: 0;
+    }
+  }
+}
+.slides-pagination {
+  $color: #fff;
+  $radius: 20px;
+  position: fixed;
+  z-index: 3;
+  bottom: $base-line-height * 2;
+  text-align: center;
+  width: 100%;
+  a {
+    @include border-radius(100%);
+    border: 4px solid $color;
+    width: $radius;
+    height: $radius;
+    display: inline-block;
+    margin: 2px;
+    &.current {
+      background: $color;
+    }
+  }
+}
