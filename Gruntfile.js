@@ -158,7 +158,7 @@ module.exports = function (grunt) {
                 httpImagesPath: '/images',
                 httpGeneratedImagesPath: '/images/generated',
                 relativeAssets: false,
-                require: 'zurb-foundation'
+                require: 'susy'
             },
             dist: {},
             server: {

@@ -1,9 +1,9 @@
+@import "../bower_components/normalize.scss/normalize";
 @import "compass";
+@import "icons";
 @import "variables";
 @import "superslides";
 @import "sections";
-
-
 
 *, *:before, *:after {
 	-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
@@ -18,7 +18,19 @@ body {
 	border: 20px solid #fff;
 }
 
+.visuallyhidden {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+
 a {
+	color: $primary-color;
 	&:hover {
 		text-decoration: none; 
 	}
@@ -47,9 +59,13 @@ h1, h2 {
 }
 
 h1 {
-	letter-spacing: 0;
 	font-size: $base-font-size + 20;
+	line-height: $base-line-height * 3;
 	color: $primary-color;
+	border: 10px solid $primary-color;
+	display: inline-block;
+	padding: 0 $base-line-height;
+	margin: 0;
 }
 
 .slogan {
