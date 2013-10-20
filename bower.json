@@ -2,8 +2,8 @@
   "name": "test-foundation",
   "version": "0.0.0",
   "dependencies": {
-    "modernizr": "~2.6.2",
-    "jquery": "~1.9.1"
+    "jquery": "~1.9.1",
+    "html5shiv": "~3.7.0"
   },
   "devDependencies": {}
 }
