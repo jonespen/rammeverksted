@@ -4,10 +4,7 @@
     width: 100%;
 }
 section {
-    float: left;
-    width: 50%;
-    padding: $base-line-height 0 0;
-    min-height: $section-height;
+    min-height: 200px;
     position: relative;
     ul {
         margin: 0;
@@ -27,6 +24,9 @@ section {
 .hours {
     color: #fff;
     background: $primary-color;
+    h2 {
+        color: #fff;
+    }
 }
 
 .contact {

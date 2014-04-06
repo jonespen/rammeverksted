@@ -1,0 +1,16 @@
+.grid-sizer { width: 25%; }
+.item { 
+  width: 50%;
+  img {
+    width: 100%;
+    display: block;
+  }
+  &.w2 { width: 25%; }
+  &.static {
+    height: 17.1%;
+    background: $primary-color;
+  }
+}
+#masonry {
+  padding: 0;
+}

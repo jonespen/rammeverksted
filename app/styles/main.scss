@@ -1,21 +1,19 @@
-@import "../bower_components/normalize.scss/normalize";
+// foundation settings
+@import "settings";
+
+@import "../bower_components/foundation/scss/normalize.scss";
+@import "../bower_components/foundation/scss/foundation.scss";
 @import "compass";
 @import "icons";
 @import "variables";
-@import "superslides";
+//@import "superslides";
 @import "sections";
-
-*, *:before, *:after {
-	-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
-}
+@import "masonry";
 
 body {
-	background: $body-background;
-	font-family: Lato, sans-serif;
-	font-size: $base-font-size;
-	line-height: $base-line-height;
-	color: #333;
-	border: 20px solid #fff;
+	@media #{$medium-up} {
+		border: 20px solid #fff;
+	}
 }
 
 .visuallyhidden {
@@ -36,10 +34,6 @@ a {
 	}
 }
 
-ul {
-	margin: 0 0 $base-line-height;
-}
-
 // Custom
 .main {
 	z-index: 9;
@@ -47,25 +41,17 @@ ul {
 }
 
 .header {
-	padding: $base-line-height * 2 0;
+	padding: 3em 0;
 	background: #f6f6f6;
 }
 
-h1, h2 {
-	font-weight: normal;
-	font-family: 'Bree Serif', serif;
-	line-height: $base-line-height;
-	margin: 0 0 $base-line-height;
-}
 
 h1 {
-	font-size: $base-font-size + 20;
-	line-height: $base-line-height * 3;
 	color: $primary-color;
 	border: 10px solid $primary-color;
 	display: inline-block;
-	padding: 0 $base-line-height;
 	margin: 0;
+	padding: rem-calc(16);
 }
 
 .slogan {
@@ -76,12 +62,10 @@ h1 {
 
 .def-list {
 	li {
-		margin-bottom: $base-line-height / 4;
 	}
 	h3 {
 		font-size: $base-font-size;
 		display: inline;
-		margin-right: $base-line-height / 4;
 	}
 }
 

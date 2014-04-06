@@ -3,7 +3,9 @@
   "version": "0.0.0",
   "dependencies": {
     "jquery": "~1.9.1",
-    "html5shiv": "~3.7.0"
+    "html5shiv": "~3.7.0",
+    "masonry": "~3.1.2",
+    "foundation": "zurb/bower-foundation#~5.2.2"
   },
   "devDependencies": {}
 }
