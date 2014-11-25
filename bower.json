@@ -1,11 +1,12 @@
 {
-  "name": "test-foundation",
+  "name": "rammekjellern",
   "version": "0.0.0",
   "dependencies": {
-    "jquery": "~1.9.1",
     "html5shiv": "~3.7.0",
-    "masonry": "~3.1.2",
-    "foundation": "zurb/bower-foundation#~5.2.2"
+    "responsive": "~3.1.4",
+    "respond": "~1.4.2",
+    "suit-components-flex-embed": "~2.0.2",
+    "suit-components-arrange": "~0.6.2"
   },
   "devDependencies": {}
 }

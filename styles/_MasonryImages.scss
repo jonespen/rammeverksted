@@ -1,0 +1,14 @@
+.MasonryImages {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100vw;
+    &-img {
+        width: (100% / 3);
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .MasonryImages { height: 200vw; }
+    .MasonryImages-img { width: 50%; }
+}

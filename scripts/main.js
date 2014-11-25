@@ -7,12 +7,12 @@
 //       }
 
 //       var $a = $this.find('a'),
-//           imageUrl = $a.attr('href'), 
+//           imageUrl = $a.attr('href'),
 //           $img = $('<img />').attr('src', imageUrl).attr('alt', '');
 
 //       $a.remove();
 //       $this.append($img).data('loaded', true);
-      
+
 //     });
 //   }
 //   var $htmlNbody = $('html, body'),
@@ -38,8 +38,8 @@
 
 // });
 
-var container = document.getElementById('masonry');
-var msnry = new Masonry( container, {
-  columnWidth: '.grid-sizer',
-  itemSelector: '.item'
-});
+// var container = document.getElementById('masonry');
+// var msnry = new Masonry( container, {
+//   columnWidth: '.grid-sizer',
+//   itemSelector: '.item'
+// });

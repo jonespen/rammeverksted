@@ -1,0 +1,29 @@
+// foundation settings
+//@import "settings";
+
+//@import "icons";
+@import "variables";
+//@import "superslides";
+@import "sections";
+@import "Header";
+@import "CoverImage";
+@import "MasonryImages";
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+a {
+	color: #fff;
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+
+.def-list {
+	h3 {
+		font-size: 1rem;
+		display: inline;
+	}
+}
