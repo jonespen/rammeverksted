@@ -1,53 +1,50 @@
-.hours {
-  color: #fff;
-  background: #c0392b; }
-  .hours h2 {
-    color: #fff; }
-
-.contact {
-  background: #fff; }
-
-.Header {
+.Container {
   position: relative;
-  color: #fff;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
   height: 100vh; }
-  .Header:before, .Header:after {
+  .Container:before, .Container:after {
     content: "";
     position: absolute;
     width: 100%;
     left: 0; }
-  .Header:before {
+  .Container:before {
     background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.75) 100%);
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.75) 100%);
     height: 50vh;
     bottom: 0; }
-  .Header:after {
+  .Container:after {
     background: rgba(0, 0, 0, 0.25);
     height: 100%;
     top: 0; }
-  .Header-col {
-    margin-top: 30%;
-    position: relative;
-    z-index: 1; }
-    .Header-col--first {
-      padding-left: 30%; }
 
-h1 {
-  margin: 0;
-  font-size: 3rem; }
+.Heading {
+  font-size: 2em;
+  color: #fff; }
+  @media (min-width: 768px) {
+    .Heading {
+      font-size: 3em; } }
 
-.slogan {
-  font-size: 1.5rem;
-  margin-bottom: 0; }
+.Slogan {
+  font-size: 1.2em; }
+  @media (min-width: 768px) {
+    .Slogan {
+      font-size: 2em; } }
 
 .CoverImage {
-  background-image: url("../images/galleri/4.jpg");
+  background-image: url("../images/galleri/3.jpg");
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0 auto;
   height: 100vh; }
+  .CoverImage-content {
+    position: relative;
+    z-index: 1;
+    padding: 1em; }
+    @media (min-width: 768px) {
+      .CoverImage-content {
+        padding-top: 10em;
+        padding-left: 10em; } }
 
 .MasonryImages {
   display: -webkit-box;
@@ -73,13 +70,18 @@ h1 {
   .MasonryImages-img {
     width: 50%; } }
 body {
-  font-family: 'Lato', sans-serif; }
+  font-family: 'Lato', sans-serif;
+  color: #f6f6f6;
+  line-height: 1.4; }
 
 a {
   color: #fff; }
   a:hover {
     text-decoration: none; }
 
-.def-list h3 {
-  font-size: 1rem;
-  display: inline; }
+.def-list {
+  list-style: none;
+  padding-left: 0; }
+  .def-list h3 {
+    font-size: 1rem;
+    display: inline; }

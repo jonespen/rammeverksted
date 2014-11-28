@@ -55,9 +55,3 @@ gulp.task('serve', function() {
 
   gulp.watch('./styles/*.scss', ['sass']);
 });
-
-gulp.task('build', function() {
-  .pipe(clean())
-  .pipe(usemin())
-  .pipe(sass())
-})

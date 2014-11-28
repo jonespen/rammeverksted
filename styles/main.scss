@@ -3,14 +3,18 @@
 
 //@import "icons";
 @import "variables";
-//@import "superslides";
-@import "sections";
+@import "mixins/breakpoint";
+@import "Container";
 @import "Header";
+@import "Heading";
+@import "Slogan";
 @import "CoverImage";
 @import "MasonryImages";
 
 body {
-    font-family: 'Lato', sans-serif;
+  font-family: 'Lato', sans-serif;
+  color: #f6f6f6;
+  line-height: 1.4;
 }
 
 a {
@@ -22,6 +26,8 @@ a {
 
 
 .def-list {
+  list-style: none;
+  padding-left: 0;
 	h3 {
 		font-size: 1rem;
 		display: inline;

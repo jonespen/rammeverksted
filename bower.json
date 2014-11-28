@@ -6,7 +6,8 @@
     "responsive": "~3.1.4",
     "respond": "~1.4.2",
     "suit-components-flex-embed": "~2.0.2",
-    "suit-components-arrange": "~0.6.2"
+    "suit-components-arrange": "~0.6.2",
+    "normalize-scss": "~3.0.2"
   },
   "devDependencies": {}
 }

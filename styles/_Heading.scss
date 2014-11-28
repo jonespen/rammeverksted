@@ -1,0 +1,7 @@
+.Heading {
+  font-size: 2em;
+  color: #fff;
+  @include breakpoint(sm) {
+    font-size: 3em;
+  }
+}

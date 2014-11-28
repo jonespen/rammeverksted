@@ -1,8 +1,17 @@
 .CoverImage {
-  background-image: url('../images/galleri/4.jpg');
+  background-image: url('../images/galleri/3.jpg');
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0 auto;
   height: 100vh;
+  &-content {
+    position: relative;
+    z-index: 1;
+    padding: 1em;
+    @include breakpoint(sm) {
+      padding-top: 10em;
+      padding-left: 10em;
+    }
+  }
 }
