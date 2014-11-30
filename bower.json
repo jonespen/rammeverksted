@@ -3,7 +3,6 @@
   "version": "0.0.0",
   "dependencies": {
     "html5shiv": "~3.7.0",
-    "responsive": "~3.1.4",
     "respond": "~1.4.2",
     "suit-components-flex-embed": "~2.0.2",
     "suit-components-arrange": "~0.6.2",
