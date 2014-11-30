@@ -17,16 +17,22 @@
     height: 100%;
     top: 0; }
 
+.Header {
+  margin-bottom: 2em; }
+
 .Heading {
   font-size: 2em;
   color: #fff;
-  margin-top: 0; }
+  margin-top: .5em;
+  margin-bottom: .33em;
+  font-weight: 600; }
 
 .Slogan {
-  font-size: 1.2em; }
+  font-size: 1.2em;
+  margin-top: 0; }
 
 .CoverImage {
-  background-image: url("../images/galleri/3.jpg");
+  background-image: url("../images/galleri/5.jpg");
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -41,16 +47,26 @@
         padding: 2em; } }
     @media (min-width: 992px) {
       .CoverImage-content {
-        padding-top: 5em;
-        padding-left: 10em; } }
+        padding: 4em; } }
 
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   color: #f6f6f6;
-  line-height: 1.4; }
+  line-height: 1.4;
+  font-weight: 300; }
   @media (min-width: 768px) {
     body {
       font-size: 1.4em; } }
+
+h2 {
+  font-size: .8em;
+  text-transform: uppercase;
+  margin-bottom: .3em;
+  letter-spacing: .05em;
+  font-weight: 300; }
+  @media (min-width: 768px) {
+    h2 {
+      font-size: .6em; } }
 
 a {
   color: #fff; }
@@ -59,9 +75,11 @@ a {
 
 .def-list {
   list-style: none;
-  padding-left: 0; }
+  padding-left: 0;
+  margin-top: 0; }
   .def-list h3 {
     font-size: 1em;
     display: inline-block;
-    min-width: 6em;
-    margin: 0; }
+    min-width: 4.5em;
+    margin: 0;
+    font-weight: 600; }

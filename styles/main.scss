@@ -12,11 +12,24 @@
 //@import "MasonryImages";
 
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   color: #f6f6f6;
   line-height: 1.4;
+  font-weight: 300;
   @include breakpoint(sm) {
     font-size: 1.4em;
+  }
+}
+
+h2 {
+  font-size: .8em;
+  text-transform: uppercase;
+  margin-bottom: .3em;
+  //color: #eee;
+  letter-spacing: .05em;
+  font-weight: 300;
+  @include breakpoint(sm) {
+    font-size: .6em;
   }
 }
 
@@ -30,10 +43,12 @@ a {
 .def-list {
   list-style: none;
   padding-left: 0;
+  margin-top: 0;
 	h3 {
 		font-size: 1em;
 		display: inline-block;
-    min-width: 6em;
+    min-width: 4.5em;
     margin: 0;
+    font-weight: 600;
 	}
 }

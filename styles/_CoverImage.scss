@@ -1,5 +1,5 @@
 .CoverImage {
-  background-image: url('../images/galleri/3.jpg');
+  background-image: url('../images/galleri/5.jpg');
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -13,8 +13,7 @@
       padding: 2em;
     }
     @include breakpoint(md) {
-      padding-top: 5em;
-      padding-left: 10em;
+      padding: 4em;
     }
   }
 }
