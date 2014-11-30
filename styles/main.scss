@@ -9,12 +9,15 @@
 @import "Heading";
 @import "Slogan";
 @import "CoverImage";
-@import "MasonryImages";
+//@import "MasonryImages";
 
 body {
   font-family: 'Lato', sans-serif;
   color: #f6f6f6;
   line-height: 1.4;
+  @include breakpoint(sm) {
+    font-size: 1.4em;
+  }
 }
 
 a {
@@ -24,12 +27,13 @@ a {
 	}
 }
 
-
 .def-list {
   list-style: none;
   padding-left: 0;
 	h3 {
-		font-size: 1rem;
-		display: inline;
+		font-size: 1em;
+		display: inline-block;
+    min-width: 6em;
+    margin: 0;
 	}
 }

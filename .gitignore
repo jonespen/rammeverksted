@@ -2,3 +2,7 @@ node_modules
 .tmp
 .sass-cache
 bower_components
+
+.idea/*.iws
+.idea/workspace.xml
+.idea/tasks.xml

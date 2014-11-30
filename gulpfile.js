@@ -19,7 +19,7 @@ gulp.task('clean', function () {
 gulp.task('usemin', function () {
   return gulp.src('./*.html')
     .pipe(usemin({
-        css: [sass(), minifyCss(), 'concat'],
+        css: [minifyCss(), 'concat'],
         html: [minifyHtml({empty: true})]
     }))
     .pipe(gulp.dest('./build'))
@@ -28,7 +28,7 @@ gulp.task('usemin', function () {
 
 // Minify Images
 gulp.task('imagemin', function(){
-  return gulp.src('./images/*')
+  return gulp.src('./images/**/*.*')
     .pipe(imagemin({
       optimizationLevel: 5,
       progressive: true,
@@ -54,4 +54,9 @@ gulp.task('serve', function() {
   });
 
   gulp.watch('./styles/*.scss', ['sass']);
+});
+
+//this is our deployment task, it will set everything for deployment-ready files
+gulp.task('deploy', ['clean', 'sass'], function () {
+  gulp.start('usemin', 'imagemin');
 });

@@ -19,16 +19,11 @@
 
 .Heading {
   font-size: 2em;
-  color: #fff; }
-  @media (min-width: 768px) {
-    .Heading {
-      font-size: 3em; } }
+  color: #fff;
+  margin-top: 0; }
 
 .Slogan {
   font-size: 1.2em; }
-  @media (min-width: 768px) {
-    .Slogan {
-      font-size: 2em; } }
 
 .CoverImage {
   background-image: url("../images/galleri/3.jpg");
@@ -43,36 +38,19 @@
     padding: 1em; }
     @media (min-width: 768px) {
       .CoverImage-content {
-        padding-top: 10em;
+        padding: 2em; } }
+    @media (min-width: 992px) {
+      .CoverImage-content {
+        padding-top: 5em;
         padding-left: 10em; } }
 
-.MasonryImages {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-  height: 100vw; }
-  .MasonryImages-img {
-    width: 33.33333%; }
-
-@media screen and (max-width: 500px) {
-  .MasonryImages {
-    height: 200vw; }
-
-  .MasonryImages-img {
-    width: 50%; } }
 body {
   font-family: 'Lato', sans-serif;
   color: #f6f6f6;
   line-height: 1.4; }
+  @media (min-width: 768px) {
+    body {
+      font-size: 1.4em; } }
 
 a {
   color: #fff; }
@@ -83,5 +61,7 @@ a {
   list-style: none;
   padding-left: 0; }
   .def-list h3 {
-    font-size: 1rem;
-    display: inline; }
+    font-size: 1em;
+    display: inline-block;
+    min-width: 6em;
+    margin: 0; }

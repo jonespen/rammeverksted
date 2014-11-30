@@ -10,7 +10,10 @@
     z-index: 1;
     padding: 1em;
     @include breakpoint(sm) {
-      padding-top: 10em;
+      padding: 2em;
+    }
+    @include breakpoint(md) {
+      padding-top: 5em;
       padding-left: 10em;
     }
   }
